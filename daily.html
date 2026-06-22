@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily English | English for Real Australia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- PWA manifest and meta tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2272C9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body data-page="daily">
+    <header>
+        <nav class="navbar">
+            <div class="brand">English for Real Australia</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daily.html" class="active">Daily English</a></li>
+                <li><a href="childcare.html">Childcare English</a></li>
+                <li><a href="nursing.html">Nursing English</a></li>
+                <li><a href="life.html">Australian Life</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="review.html">Review Center</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 页头 -->
+        <section class="section-header">
+            <h1>Daily English</h1>
+            <p>Learn everyday phrases used by Aussies.</p>
+        </section>
+        
+        <!-- 日常学习模块：随机展示句子、短语、单词 -->
+        <section class="daily-section">
+            <div id="daily-sentence" class="daily-item"></div>
+            <div id="daily-phrase" class="daily-item"></div>
+            <div id="daily-word" class="daily-item"></div>
+            <div class="shuffle-wrapper" style="text-align:center;margin-top:1rem;">
+              <button id="shuffle-btn" class="btn">Shuffle 随机</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 English for Real Australia</p>
+    </footer>
+    <!-- 数据文件包含学习短语 -->
+    <script src="js/data.js"></script>
+    <!-- 主脚本文件 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
